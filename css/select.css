@@ -1,0 +1,82 @@
+/*NEW CSS*/
+body, html {
+    height: 100%;
+
+}
+/*nav {background-color: rgba(0,0,0,0);
+	 transition: background-color .5s;
+
+
+}*/
+h2{
+
+  border-bottom: solid #673ab7;
+}
+/*	nav.opacity{opacity: .2;}*/
+#change{
+	
+	text-shadow: 0 0px 2px rgba(0, 0, 0, 0.5);
+}
+.navbar-fixed {position: absolute;z-index:999999999;}
+
+.transparentBG {
+  color: #C57ED3;
+  background-color: rgba(0,0,0,0) ;
+}
+.navbar-fixed-top{
+	background-color: black;
+}
+.text{
+	color: purple
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-linkedin-square {
+  background: #007bb5;
+  color: white;
+}
+.fa-github-square {
+  background: black;
+  color: white;
+}
+nav{
+    background:#673ab7;
+    border:none !important;
+}
+.fixednav{
+        background:#24363d;
+        opacity:0.3;
+   }
+/*
+.nav{
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+*/
