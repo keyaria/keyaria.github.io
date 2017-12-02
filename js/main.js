@@ -7,15 +7,19 @@ $(document).ready(function(){
     	scrollOffset: 0
     });
 
-$(document).ready(function(){
-  $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-      if (scroll > 54) {
-        $(".navbar-fixed").css("background" , "blue");
-      }
 
-      else{
-          $(".navbar-fixed").css("background" , "white");   
-      }
-  })
-})
+});
+$(document).scroll(function(){
+  var a = $(".about-me").offset().top;
+  a = 600;
+  console.log($(this).scrollTop());
+    if($(this).scrollTop() > a)
+    {   
+        
+       $('.nav-wrapper').css({"background-color":"#673ab7"; });
+
+
+    } else {
+       $('.nav-wrapper').css({"background":"transparent"});
+    }
+});

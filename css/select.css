@@ -2,7 +2,10 @@
 body, html {
     height: 100%;
 
+
 }
+
+   
 /*nav {background-color: rgba(0,0,0,0);
 	 transition: background-color .5s;
 
@@ -63,13 +66,56 @@ h2{
   color: white;
 }
 nav{
-    background:#673ab7;
-    border:none !important;
+   position: fixed;
+   top: 0;
+   background: transparent;
+   width: 100%;
+   -webkit-transition: background 0.3s ease-in-out;
+   -moz-transition: background 0.3s ease-in-out;
+   -o-transition: background 0.3s ease-in-out;
+   transition: background 0.3s ease-in-out;
+
 }
 .fixednav{
         background:#24363d;
         opacity:0.3;
    }
+
+.img-box{
+    position: relative;
+ 
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #673ab7;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-box:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
 /*
 .nav{
   height: 80px;
