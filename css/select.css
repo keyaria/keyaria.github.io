@@ -4,15 +4,6 @@ body, html {
 
 
 }
-body{
-
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-main {
-    flex: 1 0 auto;
-  }
 
    
 /*nav {background-color: rgba(0,0,0,0);
@@ -41,7 +32,10 @@ h2{
 .text{
 	color: purple
 }
-
+footer{
+  position: absolute;
+  width: 100%;
+}
 
 /* Style all font awesome icons */
 .fa {
