@@ -43,7 +43,7 @@ h2{
     text-decoration: none;
 }
 
-/* Add a hover effect if you want */
+/* Add a hover effect */
 .fa:hover {
     opacity: 0.7;
 }
@@ -115,6 +115,18 @@ nav{
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.git {
+  color: #E36316;
+}
+
+.link {
+  color: white;
+}
+
+.social-facebook {
+  color: #3B5998;
 }
 /*
 .nav{
