@@ -88,6 +88,7 @@ nav{
     position: relative;
  
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -130,6 +131,13 @@ nav{
 
 .social-facebook {
   color: #3B5998;
+}
+
+@media only screen and (max-width: 800px) {
+.imgsiz{
+  background-color: black;
+  
+}
 }
 /*
 .nav{
