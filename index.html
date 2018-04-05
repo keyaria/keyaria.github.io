@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-  <html>
+  <html lang="en">
     <head>
+      <meta charset="utf-8"/>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen"/>
 
-      <link type="text/css" rel="stylesheet" href="css/select.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/select.css"  media="screen"/>
 
       <!--For Social Media Links-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,12 +21,12 @@
     	<!--<div class="navbar-fixed scrollspy">-->
       
  <div class=" navbar-fixed scrollspy" role="navigation">
-    	<header>
+    	<header id="main-header">
  			<nav id="content" class="z-depth-0 .text-grey darken-4" >
  				
     			<div class="nav-wrapper ">
       			<!--	<a href="#" class="brand-logo deep-purple-text">Logo</a>-->
-               <img class="brand-logo "src="images/kw.png" width="80px" height="80px"/>
+               <img class="brand-logo" src="images/kw.png" width="80" height="80" alt="logo"/>
      				 <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.html" class="deep-purple-text">Home</a></li>
         				<li><a href="#AboutMe" class="deep-purple-text about-me">About Me</a></li>
@@ -35,7 +36,7 @@
     			</div>
 
   			</nav>
-      </header id="main-header">
+      </header>
   		</div>
 
     	
@@ -64,13 +65,13 @@
     		<div id="AboutMe" class ="section scrollspy white" >
 
     			<div class="row container" id="re">
-    				<div class="col s12" id="pe">
+    				<div class="col s12" >
     					<h2 class="header center-align"> About Me</h2>
     					<div class="col s6 hide-on-med-and-down" style="float: left; height:600px;">	
-    						<img src="images/saree_KW.png" width="225px" height="225px" style="padding: 5px 5px 0px 0px" class="hide-on-med-and-down"/>
-                <img src="images/chicago_KW.png" width="225px" height="225px" style="padding: 5px 5px 0px 0px" class="hide-on-med-and-down"/>
-                <img src="images/kimono_KW.png" width="225px" height="225px"  style="padding: 5px 5px 0px 0px" class="hide-on-med-and-down"/>
-                <img src="images/Archery_KW.png" width="225px" height="225px" style="padding: 5px 5px 0px 0px"/>
+    						<img src="images/saree_KW.png" width="225" height="225" style="padding: 5px 5px 0px 0px" class="hide-on-med-and-down" alt="picture of Keyaria in a saree"/>
+                <img src="images/chicago_KW.png" width="225" height="225" style="padding: 5px 5px 0px 0px" class="hide-on-med-and-down"  alt="picture of Keyaria in Chicago"/>
+                <img src="images/kimono_KW.png" width="225" height="225"  style="padding: 5px 5px 0px 0px" class="hide-on-med-and-down"  alt="picture of Keyaria in a kimono"/>
+                <img src="images/Archery_KW.png" width="225" height="225" style="padding: 5px 5px 0px 0px"  alt="picture of Keyaria doing archery"/>
 
 
     					</div>
@@ -93,9 +94,9 @@
 <div class="divider"></div>
 <!-- <a id="Portfolio" class="anchor"></a> -->
 
-    		    		<div id="Portfolio"class ="section scrollspy grey lighten-5" >
+    		    		<div id="Portfolio" class ="section scrollspy grey lighten-5" >
     			<div class="row container ">
-    				<div class="col s12 m10 offset-m1" id="pe">
+    				<div class="col s12 m10 offset-m1" >
     					<h2 class="header center-align" id="under">Portfolio</h2>
 
     					
@@ -104,7 +105,7 @@
               <a href="student_dev.html">
                
     					 <div class="img-box">
-                 <img src="images/library.jpg" alt="UofM Diag" class="image" width="400px" height="500px"/>
+                 <img src="images/library.jpg" alt="UofM Diag" class="image" width="400" height="500"/>
                   
 
                  <div class="overlay">
@@ -117,7 +118,7 @@
               <div class="col s6">
                 <a href="desi.html">
                <div class="img-box">
-                 <img src="images/ds.jpg" alt="DESI" class="image" width="500px" height="500px" />
+                 <img src="images/ds.jpg" alt="DESI" class="image" width="500" height="500" />
                  <div class="overlay">
                   <div class="text">DESI</div>
                 </div>
@@ -151,7 +152,7 @@
     			
     			</div>
     		</div>
-    	</div>
+    	 
 <div class ="section scrollspy grey lighten-5" >
     		<div class="row container grey-text text-darken-3 lighten-3 flow-text">
           <div class="center">
@@ -190,7 +191,7 @@
   <script src="js/parallax_init.js"></script>
   <script src="js/main.js"></script>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <script type="text/javascript">
+  <script>
   	window.sr = ScrollReveal({reset: true});
   	sr.reveal('#pe', {duration: 1000});
   	//sr.reveal('#pe', {container: '#re'});
