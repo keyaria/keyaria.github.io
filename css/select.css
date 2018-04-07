@@ -5,7 +5,6 @@ body, html {
 
 }
 
-   
 /*nav {background-color: rgba(0,0,0,0);
 	 transition: background-color .5s;
 
@@ -133,11 +132,24 @@ nav{
   color: #3B5998;
 }
 
+#arr-dow {
+  color: #673ab7;
+}
+
+#icon{
+  color: #673ab7;
+}
 @media only screen and (max-width: 800px) {
 .imgsiz{
   background-color: black;
   
 }
+}
+@media screen and (min-width: 650px) and (max-width: 1000px){
+  
+
+  
+
 }
 /*
 .nav{
