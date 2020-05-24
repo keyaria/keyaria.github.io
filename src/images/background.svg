@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c73333"/>
+      <stop offset="1" stop-color="#9f0000"/>
+    </linearGradient>
+    <clipPath id="clip-Web_1920_22">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_22" data-name="Web 1920 – 22" clip-path="url(#clip-Web_1920_22)">
+    <rect width="1920" height="1080" fill="url(#linear-gradient)"/>
+    <path id="Path_287" data-name="Path 287" d="M5970,11906s982.043,251.823,1918.683,0c2.358,140.687,0,422.81,0,422.81H5970Z" transform="translate(-5970 -11249)" fill="#fff"/>
+    <path id="Shape" d="M20.094,40.165c11.07.674,19.091-7.936,20.044-19.987S31.164-1.482,20.094.189.877,8.718.049,20.177,9.024,39.491,20.094,40.165Z" transform="matrix(0.777, 0.629, -0.629, 0.777, 1335.789, 283.39)" fill="#f0c933"/>
+    <path id="Shape-2" data-name="Shape" d="M10.05,20.085c5.535.337,9.545-3.968,10.022-9.994S15.581-.738,10.05.094.438,4.361.024,10.091,4.511,19.748,10.05,20.085Z" transform="matrix(0.777, 0.629, -0.629, 0.777, 1366.945, 269.495)" fill="#f0c933"/>
+  </g>
+</svg>
