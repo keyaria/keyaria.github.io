@@ -15,9 +15,13 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@fontsource-variable/inter": "^5.0.16",
+    "@fontsource/roboto-condensed": "^5.0.14",
     "@mdx-js/react": "^3.0.0",
+    "framer-motion": "^10.17.4",
     "gatsby": "^5.13.1",
     "gatsby-plugin-emotion": "^8.13.0",
     "gatsby-plugin-image": "^3.13.0",
@@ -28,6 +32,7 @@
     "gatsby-source-filesystem": "^5.13.0",
     "gatsby-transformer-sharp": "^5.13.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0"
   }
 }

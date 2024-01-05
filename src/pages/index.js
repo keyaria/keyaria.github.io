@@ -1,4 +1,10 @@
 import * as React from "react"
+import App from '../App'
+import { Container, Heading, Box, Text, chakra, Image, Flex, VStack, Link, Icon, shouldForwardProp  } from "@chakra-ui/react"
+import { CiLinkedin } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import { CgArrowLongDown } from "react-icons/cg";
+import { motion, isValidMotionProp } from 'framer-motion';
 
 const pageStyles = {
   color: "#232129",
@@ -76,98 +82,53 @@ const badgeStyle = {
   marginLeft: 10,
   lineHeight: 1,
 }
-
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/getting-started/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
+const ChakraBox = chakra(motion.div, {
+  /**
+   * Allow motion props and non-Chakra props to be forwarded.
+   */
+  shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
+});
 
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time. 😎
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
-    </main>
+    <App>
+      <Container maxW='container.3xl'  minH='90svh' centerContent display='flex' px={{base:'8rem', "2xl":'14rem'}}  letterSpacing='0px' py='4rem'>
+        <Box position='relative' w='100%'>
+          <Heading as='h5' fontSize={{ base: "12vw", '2xl': "150px" }} textTransform='uppercase' letterSpacing='0px' fontWeight='500' w='100%' lineHeight='0.92'>
+            <Flex justifyContent='center' textAlign='center'><Image w='0.75em' h='0.75em' bg='gray.400' borderRadius='50%'  m='auto 0'  />Keyaria W</Flex>
+            <Flex pl='4rem'>Creative</Flex>
+            <Flex justifyContent='center' textAlign='center' >Studio<Image  w='0.75em' h='0.75em' bg='gray.400' borderRadius='50%'  m='auto 0 auto 2rem'/></Flex>
+          </Heading>
+          <Text as='h6' letterSpacing='0.07em' textTransform='uppercase' textAlign='center' fontSize='1.2rem'>Specialized in Branding, Web Design and Photography</Text>
+          <Text position={{base: 'relative', lg:'absolute' }} top='180px' right='50px' maxW='350px' fontSize='14px' textTransform='uppercase' textIndent='4em' lineHeight='1.5'> We are a full-service creative studio creating awesome digital experiences and solutions. Our mission is to make work process meaningful. </Text>
+        </Box>
+        <Box position='absolute' bottom='30px' left='0' fontSize='20px'>
+       
+          <VStack mx='2rem'>
+            <Link border='solid 1px' borderRadius='50%' display='flex' w='30x' h='30px'><Icon as={CiLinkedin} /></Link>
+            <Link><Icon as={FaGithub} /></Link>
+          </VStack>
+        </Box>
+        <ChakraBox as={motion.div}   
+ 
+          animate={{
+           y : [-10,10],
+          }}
+         transition={{
+          type: 'tween',
+          duration: 2,
+          ease: "easeInOut",
+          repeat: Infinity,
+          repeatType: "reverse",
+        }} position='absolute' bottom='30px' right='0' textAlign='right' mx='2rem' fontSize='54px'>
+            <Icon as={CgArrowLongDown}/>
+          </ChakraBox>
+      </Container>
+      
+  {/* About Section */}
+
+  {/* Works Section */}
+    </App>
   )
 }
 
