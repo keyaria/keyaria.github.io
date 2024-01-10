@@ -51,7 +51,7 @@ const { scrollYProgress } = useScroll({
             <Flex justifyContent='center' textAlign='center' >Developer<Image src={abstract}  w='1em' h='1em'  borderRadius='20%'  m='auto 0 auto 1rem'/></Flex>
           </Heading>
           <Text as='h6' letterSpacing='0.07em' textTransform='uppercase' textAlign='center' fontSize='1.2rem' >Specialized in FrontEnd Development, Web Design and UX / UI Design</Text>
-          <Text position={{base: 'relative', lg:'absolute' }} top={{base: '10', lg:'180px'}} right={{base: '0', lg:'50px'}} maxW={{base: '100%', lg:'350px'}} fontSize='14px' textTransform='uppercase' textIndent={{base: 0, lg:'4em'}} lineHeight='1.5' textAlign={{base: 'center', lg: 'none'}} margin={{base: 'auto', lg: 'none'}}> Workeing for 4+ years to bring exciting and modern websites for companies. Lets work together to bring together the best solution. </Text>
+          <Text position={{base: 'relative', lg:'absolute' }} top={{base: '10', lg:'180px'}} right={{base: '0', lg:'50px'}} maxW={{base: '100%', lg:'350px'}} fontSize='14px' textTransform='uppercase' textIndent={{base: 0, lg:'4em'}} lineHeight='1.5' textAlign={{base: 'center', lg: 'none'}} margin={{base: 'auto', lg: 'none'}}> Working for 4+ years to bring exciting and modern websites for companies. Lets work together to bring together the best solution. </Text>
         </Box>
         <Box position='absolute' bottom='70px' left='0' fontSize='20px'>
        
