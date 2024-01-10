@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, Box, Flex, Text, Button, Stack } from "@chakra-ui/react";
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 //import Logo from "./Logo";
 
@@ -10,8 +12,10 @@ const NavBar = (props) => {
 
   return (
     <NavBarContainer {...props}>
-        <Flex bg='black' w='100%' h='50px' borderRadius='30px' m='10px'>
-     Keyaria
+        <Flex  w='100%' h='50px' borderRadius='30px' m='10px' justifyContent={'space-between'}>
+        <AniLink paintDrip to="/" color="black">
+Keyaria Walker
+</AniLink>
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
       </Flex>
@@ -50,16 +54,19 @@ const MenuToggle = ({ toggle, isOpen }) => {
 };
 
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
+
   return (
-    <Link href={to}>
+    <AnchorLink
+    to={to}> 
       <Text display="block" {...rest} >
         {children}
       </Text>
-    </Link>
+      </AnchorLink>
   );
 };
 
 const MenuLinks = ({ isOpen }) => {
+    
   return (
     <Box
       display={{ base: isOpen ? "block" : "none", md: "block" }}
@@ -73,15 +80,17 @@ const MenuLinks = ({ isOpen }) => {
         direction={["column", "row", "row", "row"]}
         pt={['4px', '4px', 0, 0]}
       >
-        <MenuItem to="/">Home</MenuItem>
-        <MenuItem to="/how">About </MenuItem>
-        <MenuItem to="/faetures">Contact </MenuItem>
+               <AniLink paintDrip to="/" color="black">
+Home</AniLink>
+<MenuItem to="/#about">About </MenuItem>
+        <MenuItem to="/#works">Works</MenuItem>
+        <MenuItem to="/#contact">Contact </MenuItem>
         <MenuItem to="/signup" isLast>
           <Button
             size="sm"
             rounded="md"
-            color={["red.500", "red.500", "white", "white"]}
-            bg={["white", "white", "red.500", "red.500"]}
+            color={["red.500", "red.500", "black", "black"]}
+            bg={["white", "white", "white", "White"]}
             _hover={{
               bg: ["red.100", "red.100", "red.600", "red.600"]
             }}
@@ -104,8 +113,8 @@ const NavBarContainer = ({ children, ...props }) => {
       w="100%"
       mb='12px'
       p='16px'
-      bg={["red.500", "red.500", "transparent", "transparent"]}
-      color={["black", "black", "primary.700", "white"]}
+      bg={["black", "black", "transparent", "transparent"]}
+      color={["black", "black", "black", "black"]}
       {...props}
     >
       {children}

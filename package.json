@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "deploy": "gatsby build && gh-pages -d public -b main",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -23,14 +23,18 @@
     "@mdx-js/react": "^3.0.0",
     "framer-motion": "^10.17.4",
     "gatsby": "^5.13.1",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-emotion": "^8.13.0",
     "gatsby-plugin-image": "^3.13.0",
     "gatsby-plugin-manifest": "^5.13.0",
     "gatsby-plugin-mdx": "^5.13.0",
     "gatsby-plugin-sharp": "^5.13.0",
     "gatsby-plugin-sitemap": "^6.13.0",
+    "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-source-filesystem": "^5.13.0",
     "gatsby-transformer-sharp": "^5.13.0",
+    "gh-pages": "^6.1.1",
+    "gsap": "^3.12.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0"

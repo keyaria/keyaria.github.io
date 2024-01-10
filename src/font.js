@@ -5,7 +5,7 @@ const Fonts = () => (
   <Global
     styles={`
     @font-face {
-      font-family: 'ClashGrotesk-Variable';
+      font-family: 'ClashGrotesk';
       src: url('./fonts/ClashGrotesk-Variable.woff2') format('woff2'),
            url('./fonts/ClashGrotesk-Variable.woff') format('woff'),
            url('./fonts/ClashGrotesk-Variable.ttf') format('truetype');
@@ -16,7 +16,7 @@ const Fonts = () => (
     
     
     @font-face {
-      font-family: 'ClashGrotesk-Extralight';
+      font-family: 'ClashGrotesk Extralight';
       src: url('./fonts/ClashGrotesk-Extralight.woff2') format('woff2'),
            url('./fonts/ClashGrotesk-Extralight.woff') format('woff'),
            url('./fonts/ClashGrotesk-Extralight.ttf') format('truetype');
@@ -27,7 +27,7 @@ const Fonts = () => (
     
     
     @font-face {
-      font-family: 'ClashGrotesk-Light';
+      font-family: 'ClashGrotesk Light';
       src: url('./fonts/ClashGrotesk-Light.woff2') format('woff2'),
            url('./fonts/ClashGrotesk-Light.woff') format('woff'),
            url('./fonts/ClashGrotesk-Light.ttf') format('truetype');
@@ -38,7 +38,7 @@ const Fonts = () => (
     
     
     @font-face {
-      font-family: 'ClashGrotesk-Regular';
+      font-family: 'ClashGrotesk Regular';
       src: url('./fonts/ClashGrotesk-Regular.woff2') format('woff2'),
            url('./fonts/ClashGrotesk-Regular.woff') format('woff'),
            url('./fonts/ClashGrotesk-Regular.ttf') format('truetype');
@@ -49,7 +49,7 @@ const Fonts = () => (
     
     
     @font-face {
-      font-family: 'ClashGrotesk-Medium';
+      font-family: 'ClashGrotesk Medium';
       src: url('./fonts/ClashGrotesk-Medium.woff2') format('woff2'),
            url('./fonts/ClashGrotesk-Medium.woff') format('woff'),
            url('./fonts/ClashGrotesk-Medium.ttf') format('truetype');
@@ -60,7 +60,7 @@ const Fonts = () => (
     
     
     @font-face {
-      font-family: 'ClashGrotesk-Semibold';
+      font-family: 'ClashGrotesk Semibold';
       src: url('./fonts/ClashGrotesk-Semibold.woff2') format('woff2'),
            url('./fonts/ClashGrotesk-Semibold.woff') format('woff'),
            url('./fonts/ClashGrotesk-Semibold.ttf') format('truetype');
@@ -71,7 +71,7 @@ const Fonts = () => (
     
     
     @font-face {
-      font-family: 'ClashGrotesk-Bold';
+      font-family: 'ClashGrotesk Bold';
       src: url('./fonts/ClashGrotesk-Bold.woff2') format('woff2'),
            url('./fonts/ClashGrotesk-Bold.woff') format('woff'),
            url('./fonts/ClashGrotesk-Bold.ttf') format('truetype');
